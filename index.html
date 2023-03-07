@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        body {
+            background-image: linear-gradient(to bottom right, #0093E9, #80D0C7);
+            background-attachment: fixed;
+            text-align: center;
+        }
+        #calc {
+            background-color: white;
+            border-style: solid;
+            border-color: black;
+            border-radius: 5vh;
+            height: 60vh;
+            width: 50vw;
+            position: fixed;
+            left: 25vw;
+            top: 20vh;
+            display: inline-block;
+            font-family: Helvetica;
+        }
+        #no1 {
+            width: 40vw;
+            height: 5vh;
+            border-radius: 5vh;
+            text-align: center;
+            font-size: 2vh;
+        }
+        #no2 {
+            width: 40vw;
+            height: 5vh;
+            border-radius: 5vh;
+            text-align: center;
+            font-size: 2vh;
+        }
+        #add, #minus, #times, #divide {
+            border-radius: 5px;
+            height: 5vh;
+            width: 5vw;
+            font-size: 3vh;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="calc">
+        <h1>BasiCalc</h1>
+        <input type="text" id="no1" placeholder="Input first number"><br><br>
+        <input type="text" id="no2" placeholder="Input second number"><br><br>
+        <button onclick="addition();" id="add">+</button> &nbsp;
+        <button onclick="subtraction();" id="minus">-</button> &nbsp;
+        <button onclick="multiplication();" id="times">×</button> &nbsp;
+        <button onclick="division();" id="divide">÷</button><br>
+        <h1 id="ans">Answer</h1>
+        <h1 id="sol">x _ y = _</h1>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
